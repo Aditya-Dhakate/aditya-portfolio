@@ -1,0 +1,29 @@
+.change-theme{
+position: absolute;
+top: 1.5rem;
+right: 0;
+font-size: 1.25rem;
+color: var(--title-color);
+cursor: pointer;
+transition: 0.4s;
+}
+.change-theme:hover{
+   color: var(--first-color);
+
+}
+body.dark-theme{
+    --title-color: hsl(var(--hue),12%, 95%);
+    --text-color: hsl(var(--hue), 12%, 75%);
+    --body-color: hsl(var(--hue), 40%, 8%);
+    --container-color: hsl(var(--hue), 24%, 12%);
+}
+.dark-theme .filter-content{
+    background-color: var(--container-color);
+}
+
+@media screen and (min-width: 992px) {
+    .change-theme{
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+}

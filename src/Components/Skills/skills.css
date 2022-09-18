@@ -1,0 +1,43 @@
+.skill-content{
+    row-gap: 3.5rem;
+}
+.skill-title{
+    font-size: var(--h3-font-size);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.skill-box{
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+.skill-group{
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+.skill-data{
+    display: flex;
+    column-gap: 0.5rem;
+}
+.skill-data i{
+    font-size: 1rem;
+    color: var(--first-color);
+}
+.skill-name{
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    line-height: 18px;
+}
+.skill-level{
+    font-size: var(--smaller-font-size);
+
+}
+
+@media screen and (min-width:360px){
+    .skill-content{
+        grid-template-columns: repeat(2, 322px);
+        justify-content: center;
+        column-gap: 3rem;
+    }
+}
